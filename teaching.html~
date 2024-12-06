@@ -21,9 +21,8 @@
   color: black;
 }
     </style>
-    </head>
-    <title>(Pre)-publications </title>
-<body>
+  </head>
+  <body>
    <div class="topnav">
      <a href="./index.html">Home</a>
      <a href="./publications.html">Publications</a>
