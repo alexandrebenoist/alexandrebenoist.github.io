@@ -27,6 +27,27 @@ footer {
   text-align: center;
   color: white;
 }
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
     </head>
     <title> Alexandre Benoist </title>
@@ -39,6 +60,16 @@ footer {
    </div>
 <h1 style="background-color:Blue;" style="color:White;" align= "center">Alexandre Benoist</h1>
    <p>Welcome to my webpage ! I am a PhD student in mathematics at the University of Luxembourg, working under the supervision of <a href="https://www.antonellaperucca.net"> Antonella Perucca</a>. My interests lie in number theory, and I am currently working on isogeny graphs.  </p>
+   <div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
 
    <footer>
      <p> This page was last updated on December 6, 2024. </p>
